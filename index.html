@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doomsday Prepper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Doomsday Prepper 🏠</h1>
+  <div id="resources">
+    Wood: <span id="wood">0</span> | 
+    Metal: <span id="metal">0</span> | 
+    Water: <span id="water">0</span>
+  </div>
+  
+  <div id="buttons">
+    <button onclick="gather('wood')">Gather Wood</button>
+    <button onclick="gather('metal')">Gather Metal</button>
+    <button onclick="gather('water')">Gather Water</button>
+  </div>
+  
+  <canvas id="gameCanvas" width="300" height="300"></canvas>
+  
+  <div id="score">Score: <span id="scoreVal">0</span></div>
+  <div id="event"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
